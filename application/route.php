@@ -13,9 +13,11 @@ return [
     '__pattern__' => [
         'name' => '\w+',
     ],
-//    '[member]'     => [
-//        'index'=>['@admin/member.member/index', ['method' => 'post'],],
-//        ':id'   => ['index/hello', ['method' => 'get'], ['id' => '\d+']],
-//        ':name' => ['index/hello', ['method' => 'post']],
-//    ],
+   '[category]'     => [
+       'add'=>['@admin/goods.category/add'],
+       'del'=>['@admin/goods.category/delAll'],
+       'delOne'=>['@admin/goods.category/delOne'],
+       'getsParent'=>['@admin/goods.category/getsParent'],
+       'index'=>['@admin/member.member/index', ['method' => 'post'],],
+    ],
 ];

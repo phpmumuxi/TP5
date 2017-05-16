@@ -5,7 +5,15 @@ class Index
 {
     public function index()
     {
-        return view();
+		$bread=array(
+                    'first'=>'商品管理',
+                    'second'=>'分类列表',
+                    );
+
+        return view('index', [
+    'bread'  =>$bread,
+    
+]);
     }
 	public function index1()
     {

@@ -5,7 +5,6 @@ class Index
 {
     public function index()
     {
-		echo '22';exit();
         return view();
     }
     
