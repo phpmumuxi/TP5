@@ -20,4 +20,7 @@ return [
        'getsParent'=>['@admin/goods.category/getsParent'],
        'index'=>['@admin/member.member/index', ['method' => 'post'],],
     ],
+    '[cart]'   =>  [
+          'addCart'=>['index/cart/addCart',['method' => 'get']],
+    ],
 ];

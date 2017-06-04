@@ -167,7 +167,11 @@ return [
     'view_replace_str'       => [
 		'__PUBLIC__' => '/public',//public目录的全局变量
 		'__ROOT__' => '/',
-		/*如果你手动实例化视图类，请确保在实例化的时候传入配置参数：
+        '__CSS__' => '/public/qt/style/',
+        '__JS__' => '/public/qt/js/',
+        '__IMG__' => '/public/qt/images/',
+
+        /*如果你手动实例化视图类，请确保在实例化的时候传入配置参数：
 
 		$view = new View([],Config::get('view_replace_str'));
 		return $view->fetch();
